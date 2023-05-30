@@ -1,0 +1,36 @@
+body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: max-content
+    /* Ajuste a altura conforme necessário */
+}
+
+.center-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-form .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.center-form label {
+    margin-right: 10px;
+}
+
+.center-form input,
+.center-form select {
+    margin-left: 10px;
+}

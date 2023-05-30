@@ -1,0 +1,15 @@
+<div>
+    <h2>Lista de Usuários</h2>
+    <ul>
+        <button (click)="navigateToCreateUser()">Criar Usuário</button>
+        <li *ngFor="let user of users">
+            <h3>{{ user.nome }}</h3>
+            <p>Email: {{ user.email }}</p>
+            <p>Sexo: {{ user.sexo }}</p>
+            <p>Telefone: {{ user.telefone }}</p>
+            <button (click)="editUser(user.id)">Editar</button>
+            <button (click)="deleteUser(user.id)">Excluir</button>
+
+        </li>
+    </ul>
+</div>
